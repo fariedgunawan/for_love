@@ -24,11 +24,13 @@ import Duapuluhsatu from "./page/Duapuluhsatu";
 import Duapuluhdua from "./page/Duapuluhdua";
 import Duapuluhtiga from "./page/Duapuluhtiga";
 import Duapuluhempat from "./page/Duapuluhempat";
+import Login from "./page/Login";
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Landing />} />
+        <Route path="/" element={<Login />} />
+        <Route path="/landing" element={<Landing />} />
         <Route path="/1" element={<Satu />} />
         <Route path="/2" element={<Dua />} />
         <Route path="/3" element={<Tiga />} />

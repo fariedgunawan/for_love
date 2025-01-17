@@ -2,6 +2,7 @@ import gif from "../assets/cool-fun.gif";
 import { useNavigate } from "react-router-dom";
 const satu = () => {
   const navigate = useNavigate();
+  
   return (
     <div className="landing bg-gradient-to-tr from-[#be185d] via-[#f472b6] to-[#fbcfe8] text-white min-h-screen">
       <div className="body flex flex-col justify-center items-center min-h-screen">
