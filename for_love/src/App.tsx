@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Landing from "./page/Landing";
-import Satu from "./page/satu";
+import Satu from "./page/Satu";
 import Dua from "./page/Dua";
 import Tiga from "./page/Tiga";
 import Empat from "./page/Empat";
