@@ -28,6 +28,7 @@ const Login = () => {
         <div className="lg:w-1/2 xl:w-5/12 p-6 sm:p-12">
           <div className="mt-12 flex flex-col items-center">
             <h1 className="text-2xl xl:text-3xl font-extrabold text-white">Mastiin dulu</h1>
+            <h2 className="text-center text-[12px] mt-[10px] text-red-700"> !! sebelum masuk play dulu ya audio diatas biar lucu !!</h2>
 
             <div className="w-full flex-1 mt-8">
               <div className="mx-auto max-w-xs">
@@ -38,6 +39,7 @@ const Login = () => {
                   value={namaCewe}
                   onChange={(e) => setNamaCewe(e.target.value)}
                 />
+                
                 <input
                   className="w-full px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white mt-5"
                   type="text"
