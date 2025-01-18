@@ -1,0 +1,132 @@
+/* Animasi balon */
+.balloon {
+  position: absolute;
+  bottom: -100px;
+  width: 40px;
+  height: 60px;
+  border-radius: 50%;
+  animation: move-up 5s infinite ease-in-out;
+  transform: translateX(-50%);
+  z-index: 10;
+  opacity: 0.8;
+}
+
+/* Tali untuk balon */
+.balloon::after {
+  content: "";
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  width: 2px;
+  height: 40px;
+  background-color: #cccccc; /* Warna tali */
+  transform: translateX(-50%);
+}
+
+/* Variasi warna, posisi, dan durasi balon */
+.balloon:nth-child(1) {
+  background-color: #ffccd5;
+  left: 20%;
+  animation-duration: 6s;
+  animation-delay: 0s;
+}
+.balloon:nth-child(2) {
+  background-color: #f8b4d9;
+  left: 40%;
+  animation-duration: 5.5s;
+  animation-delay: 1s;
+}
+.balloon:nth-child(3) {
+  background-color: #fbcfe8;
+  left: 60%;
+  animation-duration: 7s;
+  animation-delay: 2s;
+}
+.balloon:nth-child(4) {
+  background-color: #fde68a;
+  left: 80%;
+  animation-duration: 4.5s;
+  animation-delay: 1.5s;
+}
+.balloon:nth-child(5) {
+  background-color: #f9a8d4;
+  left: 10%;
+  animation-duration: 6.5s;
+  animation-delay: 0.5s;
+}
+
+/* Animasi love */
+.love {
+  position: absolute;
+  bottom: -50px;
+  width: 30px;
+  height: 30px;
+  clip-path: polygon(50% 0%, 100% 35%, 82% 100%, 50% 70%, 18% 100%, 0% 35%);
+  animation: move-up-love 6s infinite ease-in-out;
+  opacity: 0.9;
+  z-index: 10;
+}
+
+/* Variasi warna, posisi, dan durasi love */
+.love:nth-child(1) {
+  background-color: #f72585;
+  left: 15%;
+  animation-duration: 6s;
+  animation-delay: 0s;
+}
+.love:nth-child(2) {
+  background-color: #ff69b4;
+  left: 30%;
+  animation-duration: 5.5s;
+  animation-delay: 1s;
+}
+.love:nth-child(3) {
+  background-color: #ff1493;
+  left: 45%;
+  animation-duration: 7s;
+  animation-delay: 0.5s;
+}
+.love:nth-child(4) {
+  background-color: #db7093;
+  left: 60%;
+  animation-duration: 4.5s;
+  animation-delay: 1.5s;
+}
+.love:nth-child(5) {
+  background-color: #ff85a1;
+  left: 75%;
+  animation-duration: 6.5s;
+  animation-delay: 0.7s;
+}
+
+/* Keyframes untuk balon */
+@keyframes move-up {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-50vh) scale(1.1);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-100vh) scale(0.9);
+    opacity: 0;
+  }
+}
+
+/* Keyframes untuk love */
+@keyframes move-up-love {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(-50vh) scale(1.2);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-100vh) scale(0.9);
+    opacity: 0;
+  }
+}

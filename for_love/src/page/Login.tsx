@@ -5,6 +5,7 @@ const Login = () => {
   const navigate = useNavigate();
   const [namaCewe, setNamaCewe] = useState("");
   const [namaCowo, setNamaCowo] = useState("");
+  const [showModal, setShowModal] = useState(false);
 
   const handleLogin = () => {
     if (namaCewe.toLowerCase() !== "alma") {
@@ -12,12 +13,17 @@ const Login = () => {
     } else if (namaCowo.toLowerCase() !== "faried") {
       alert("Kamu punya cowo lain ya huhu...");
     } else {
-      navigate("/landing");
+      setShowModal(true);
     }
   };
 
+  const closeModal = () => {
+    setShowModal(false);
+    navigate("/landing");
+  };
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#9d174d] via-[#d946ef] to-[#f0abfc] text-gray-900 flex justify-center items-center">
+    <div className="min-h-screen bg-[#ee97a6] font-medium text-black flex justify-center items-center">
       <div className="max-w-screen-xl m-0 sm:m-10 sm:rounded-lg flex justify-center flex-1 px-[20px]">
         <div className="lg:w-1/2 xl:w-5/12 p-6 sm:p-12">
           <div className="mt-12 flex flex-col items-center">
@@ -54,6 +60,20 @@ const Login = () => {
           </div>
         </div>
       </div>
+
+      {showModal && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+          <div className="bg-white rounded-lg shadow-lg p-8 max-w-md">
+            <h2 className="text-lg font-bold mb-4">Konten ini termasuk unsur baper</h2>
+            <p className="text-gray-700 mb-6">Yakin mau lanjut?</p>
+            <div className="flex justify-end">
+              <button className="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 transition-all duration-300" onClick={closeModal}>
+                Bodoamat
+              </button>
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 };

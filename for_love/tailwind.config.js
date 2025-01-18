@@ -16,8 +16,9 @@ export default {
           "0%, 100%": { transform: "translateY(-10px)" },
           "50%": { transform: "translateY(10px)" },
         },
+        
       },
     },
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui"), require("tailwindcss-animated")],
 };

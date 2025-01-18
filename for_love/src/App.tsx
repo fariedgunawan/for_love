@@ -24,10 +24,14 @@ import Duapuluhsatu from "./page/Duapuluhsatu";
 import Duapuluhdua from "./page/Duapuluhdua";
 import Duapuluhtiga from "./page/Duapuluhtiga";
 import Duapuluhempat from "./page/Duapuluhempat";
+import audio from "../src/assets/yung_kai_-_blue_@Pedoca.com.mp3";
 import Login from "./page/Login";
 function App() {
   return (
     <Router>
+      <audio autoPlay loop>
+        <source src={audio} type="audio/mp3" />
+      </audio>
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/landing" element={<Landing />} />
