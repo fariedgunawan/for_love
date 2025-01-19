@@ -4,7 +4,7 @@ import "../page/balon.css";
 const Duapuluhtiga = () => {
   const navigate = useNavigate();
   return (
-    <div className="landing bg-[#ee97a6] font-medium text-black min-h-screen relative overflow-hidden">
+    <div className="landing bg-[#fdd8f8] font-medium text-[#871464] min-h-screen relative overflow-hidden">
       {/* Animasi Balon */}
       <div className="balloon"></div>
       <div className="balloon"></div>

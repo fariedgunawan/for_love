@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 const Duapuluhsatu = () => {
   const navigate = useNavigate();
   return (
-    <div className="landing bg-[#ee97a6] font-medium text-black min-h-screen">
+    <div className="landing bg-[#fdd8f8] font-medium text-[#871464] min-h-screen">
       <div className="body flex flex-col justify-center items-center min-h-screen">
         <h2 className=" md:text-[22px] text-center font-semibold px-[20px] md:w-[800px] animate-fade-up">
           maaf ya sayang kalo aku belom menjadi cowo yang kamu mau, maaf juga kalo masih belom bisa nurutin semua kemauan kamu, maaf juga kalo aku pernah ngecewain kamu selama ini sayang.. tolong evaluasi aku kalo misal aku dah bukan yang

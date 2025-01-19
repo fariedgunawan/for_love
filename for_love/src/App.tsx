@@ -27,6 +27,7 @@ import Duapuluhtiga from "./page/Duapuluhtiga";
 import Duapuluhempat from "./page/Duapuluhempat";
 import audio from "../src/assets/yung_kai_-_blue_@Pedoca.com.mp3";
 import Login from "./page/Login";
+import Hasil from "./page/hasil";
 
 function App() {
   const audioRef = useRef(new Audio(audio));
@@ -82,6 +83,7 @@ function App() {
         <Route path="/22" element={<Duapuluhdua />} />
         <Route path="/23" element={<Duapuluhtiga />} />
         <Route path="/24" element={<Duapuluhempat />} />
+        <Route path="/hasil" element={<Hasil />} />
       </Routes>
     </Router>
   );

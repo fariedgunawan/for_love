@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 const DuaPuluh = () => {
   const navigate = useNavigate();
   return (
-    <div className="landing bg-[#ee97a6] font-medium text-black min-h-screen">
+    <div className="landing bg-[#fdd8f8] font-medium text-[#871464] min-h-screen">
       <div className="body flex flex-col justify-center items-center min-h-screen">
         <h2 className=" md:text-[22px] text-center font-semibold px-[20px] md:w-[800px] animate-fade-up">
           makasih ya alma.... kamu dah nerima aku di kehidupan kamu dan mau aku dampingin... suatu kebahagian yang gabisa aku bayar sama sekali dan gabisa diganti dengan apa pun itu, makasih juga kamu dah selalu nemenin aku kemana pun itu

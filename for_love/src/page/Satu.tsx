@@ -4,7 +4,7 @@ const satu = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="landing bg-[#ee97a6] font-medium text-black min-h-screen">
+    <div className="landing bg-[#fdd8f8] font-medium text-[#871464] min-h-screen">
       <div className="body flex flex-col justify-center items-center min-h-screen">
         <img src={gif} alt="" className="w-[150px] rounded-lg mb-[30px] md:w-[200px] animate-fade-down" />
         <h2 className=" md:text-[22px] text-center font-semibold px-[20px] md:w-[800px] animate-fade-up">gimana kabar kamu sayang? aku berharap kesehatan selalu membersamai kamu, dan semoga kamu diberi kesenangan terus yaa</h2>
