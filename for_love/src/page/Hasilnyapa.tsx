@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-const Hasil = () => {
+const Hasilnyapa = () => {
   const navigate = useNavigate();
   return (
     <div className="landing bg-[#fdd8f8] font-medium text-[#871464] min-h-screen">
@@ -15,4 +15,4 @@ const Hasil = () => {
   );
 };
 
-export default Hasil;
+export default Hasilnyapa;
