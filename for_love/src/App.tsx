@@ -32,6 +32,8 @@ function App() {
   const audioRef = useRef(new Audio(audio));
 
   useEffect(() => {
+    // Set the audio to loop
+    audioRef.current.loop = true;
     // Play audio when the component mounts
     audioRef.current.play();
   }, []);
