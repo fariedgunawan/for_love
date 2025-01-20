@@ -12,16 +12,9 @@ const Duapuluhtiga = () => {
       <div className="balloon"></div>
       <div className="balloon"></div>
 
-      {/* Animasi Love */}
-      <div className="love"></div>
-      <div className="love"></div>
-      <div className="love"></div>
-      <div className="love"></div>
-      <div className="love"></div>
-
       <div className="body flex flex-col justify-center items-center min-h-screen">
         <img src={gif} alt="" className="w-[300px] rounded-lg mb-[30px] md:w-[300px] animate-fade-down" />
-        <h2 className="md:text-[22px] text-center font-semibold px-[20px] md:w-[800px] animate-fade-up">aku sayang bgt sama kamu.... selalu ada di diri aku yaa aku cuman gamau kehilangan kamu love you sayang</h2>
+        <h2 className="md:text-[22px] text-center font-semibold px-[20px] md:w-[800px] animate-fade-up">aku sayang bgt sama kamu.... selalu ada di diri aku yaa, aku cuman gamau kehilangan kamu.... love you sayang</h2>
         <button className="btn h-[10px] px-[20px] bg-white border-none hover:bg-[#f472b6] mt-[30px] text-[#be185d] animate-jump" onClick={() => navigate("/24")}>
           nih buat kamu
         </button>

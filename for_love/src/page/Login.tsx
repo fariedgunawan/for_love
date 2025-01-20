@@ -85,7 +85,7 @@ const Login = () => {
       {isLoading && (
         <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50">
           <div className="loader">
-            <span className="loader-text">loading</span>
+            <span className="loader-text">Loading..</span>
             <span className="load"></span>
           </div>
         </div>
